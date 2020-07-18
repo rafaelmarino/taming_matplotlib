@@ -93,6 +93,12 @@ ax = fig.gca()
 ax.plot(x, y)
 fig.savefig("images/framing_fig_bg_color.png", facecolor=fig.get_facecolor())
 
+# Transparent background.
+fig = plt.figure()
+ax = fig.gca()
+ax.plot(x, y)
+fig.savefig("images/framing_transparent_bg.png", transparent=True)
+
 # Change the color of the figure frame.
 fig = plt.figure(linewidth=10, edgecolor="#04253a")
 ax = fig.gca()
